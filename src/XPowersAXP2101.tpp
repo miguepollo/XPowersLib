@@ -2860,7 +2860,7 @@ protected:
         return 0;
     }
 
-    bool inline enablePowerOutput(uint8_t channel)
+    bool enablePowerOutput(uint8_t channel)
     {
         switch (channel) {
         case XPOWERS_DCDC1:
@@ -2897,7 +2897,7 @@ protected:
         return false;
     }
 
-    bool inline disablePowerOutput(uint8_t channel)
+    bool disablePowerOutput(uint8_t channel)
     {
         if (getProtectedChannel(channel)) {
             log_e("Failed to disable the power channel, the power channel has been protected");
