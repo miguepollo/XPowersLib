@@ -2821,7 +2821,7 @@ public:
         return readRegister(XPOWERS_AXP2101_IC_TYPE);
     }
 
-protected:
+
 
     uint16_t getPowerChannelVoltage(uint8_t channel)
     {
@@ -3031,7 +3031,7 @@ protected:
         }
         return  false;
     }
-
+protected:
     /*
      * Interrupt control functions
      */
